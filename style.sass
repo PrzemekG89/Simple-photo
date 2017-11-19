@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext")
+$mainfont: 'Varela Round', sans-serif
+
+*
+    box-sizing: border-box
+
+body 
+    font-family: $mainfont
+    letter-spacing: 2px
+
+section
+    padding: 70px 0
+
+h5 
+    text-transform: uppercase
+    font-size: 16px
+    margin-top: 10px
+    font-weight: bold
+
+.same-buttons
+    font-size: 14px
+    border-radius: 0
+    padding: 10px 20px
+    color: #ffffff
+    background-color: #16A085
+    width: 200px
+    margin: 20px 0
+    &:hover
+        cursor: pointer
+        background-color: #38c297
+
+.scroll__navall
+    background-color: rgba(0, 0, 0, 0.7)!important
+    transition: 0.7s
+
+.navbar
+    .navbar-brand
+        position: relative
+        left: 48%
+    .navbar-toggler
+        border: 1px solid #ffffff
+        transition: 0.7s
+        .fa
+            color: #ffffff
+            font-size: 30px
+            transition: 0.7s
+            &:hover
+                color: #000000
+        &:hover
+            background-color: #ffffff
+
+    .navbar-collapse
+        .navbar-nav
+            justify-content: space-around
+            width: 100%
+            padding: 10px
+            .nav-section
+                display: flex
+                .nav-item
+                    width: 50%
+                    a 
+                        color: #ffffff
+                        text-align: center
+                        &:hover
+                            background-color: #ffffff
+                            color: #000000
+
+.jumbotron
+    background-image: url(images/background.png)
+    background-position: center
+    background-size: cover
+    height: 100vh
+    color: #ffffff
+    border-radius: 0
+    margin-bottom: 0
+    position: relative
+    .jumbotron-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 100%
+        .btn
+            @extend .same-buttons
+            margin: 0 auto
+    .socjals
+        font-size: 30px
+        position: absolute
+        top: 90vh
+        left: 44vw
+        .fa
+            color: #ffffff
+            padding: 10px
+            transition-duration: 0.7s
+            &:hover
+                background-color: #ffffff
+                color: #000000
+                border-radius: 50%
+
+.getstarted
+    background-color: #F5F6F7
+    padding-bottom: 0
+    h5
+        color: #16A085
+        margin-bottom: 20px
+        padding: 0 10px
+    p 
+        font-size: 14px
+        padding: 10px
+    .btn
+        @extend .same-buttons
+
+.design
+    background-color: #ffffff
+    position: relative
+    z-index: 3
+    [class*='col-md']
+        max-height: 350px
+        .phone 
+            z-index: 1
+        .carousel-inner
+            position: relative
+            z-index: 5
+            background-color: #ffffff
+            .carousel-item
+                h5
+                    color: #16A085
+                    margin-bottom: 20px
+                    padding: 0 10px
+                p 
+                    font-size: 14px
+                    padding: 10px
+                .btn
+                    @extend .same-buttons
+        .control
+            color: #000000
+            font-size: 20px
+
+
+.community
+    background-color: #F5F6F7
+    position: relative
+    z-index: 4
+    .row
+        align-items: center
+        .community__text
+            padding: 10px
+            .text__p
+                font-size: 12px
+        .community__carousel
+            .controls__panel
+                display: flex
+                justify-content: flex-end
+                padding-right: 50px
+                .control
+                    color: #000000
+                    font-size: 20px
+                &:nth-child(2)
+                    padding-right: 30px
+
+.subscribe
+    background-image: url(images/subscribe-background.png)
+    background-position: center
+    background-size: cover
+    height: 100vh
+    text-transform: uppercase
+    display: flex
+    justify-content: center
+    flex-direction: column
+    .subscribe__h
+        color: #fff
+    .input-group
+        width: 300px
+        margin: 30px auto
+        .subscribe__input
+            line-height: 2
+            &::-webkit-input-placeholder 
+                color: #000
+        .subscribe__check
+            .btn
+                background-color: #16A085
+                border-color: #16A085
+                transition-duration: 0.7
+                &:hover
+                    cursor: pointer
+                    background-color: #38c297
+
+.download
+    background-color: #F5F6F7
+    text-transform: uppercase
+    .download__box
+        width: 80%
+        margin: 0 auto
+        .buttons
+            display: flex
+            justify-content: center
+            .input-group
+                justify-content: center
+                transition-duration: 0.7s
+                margin-top: 20px
+                &:hover
+                    transform: scale(1.1)
+                .row__btn
+                    background-color: #1ABC9C
+                    color: #ffffff
+                    width: 180px
+                    &:hover
+                        cursor: pointer
+                .input-group-btn
+                    margin-left: -3px
+                    .btn-secondary
+                        background-color: #16A085
+                        border-color: #16A085
+                        &:hover
+                            cursor: pointer
+                
+.footer
+    padding: 30px 0
+    font-weight: bold
+    .footer__link
+        margin-top: 10px
+        color: #1ABC9C
+        a 
+            color: #373737
+            text-decoration: none 
+            transition-duration: 0.5s
+            &:hover
+                background-color: #151515
+                color: #ffffff
+    .cameraimg
+        display: flex
+        flex-direction: row-reverse
+        
+@media(max-width: 992px)
+
+    .scroll__nav
+        background-color: rgba(0, 0, 0, 0.7)
+    
