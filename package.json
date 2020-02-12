@@ -1,0 +1,19 @@
+{
+  "name": "simple-photo",
+  "version": "1.0.0",
+  "description": "This site is published at https://przemekg89.github.io/Simple-photo/",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrzemekG89/Simple-photo.git"
+  },
+  "author": "Przemyslaw Galdys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrzemekG89/Simple-photo/issues"
+  },
+  "homepage": "https://github.com/PrzemekG89/Simple-photo#readme"
+}
