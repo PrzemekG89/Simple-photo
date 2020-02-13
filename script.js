@@ -1,18 +1,25 @@
-// change navbar background color
+window.onload = (function() {
 
-const scrollNav = $('#navbarNav');
-const scrollNavAll = $('#navbarScroll');
+    // change navbar background color
 
-$(window).ready(function() {
+    const scrollNav = document.getElementById('navbarNav');
+    const scrollNavAll = document.getElementById('navbarScroll');
     let scrollY = 0;
-    $(window).scroll(function() {
-        scrollY = $(this).scrollTop();
+
+    window.addEventListener('scroll', () => {
+        scrollY = window.pageYOffset;
         if (scrollY >= 600) {
-            $(scrollNav).addClass('scroll__nav');
-            $(scrollNavAll).addClass('scroll__navall')
+            scrollNav.classList.add('scroll__nav');
+            scrollNavAll.classList.add('scroll__navall');
         } else {
             $(scrollNav).removeClass('scroll__nav');
-            $(scrollNavAll).removeClass('scroll__navall')
+            $(scrollNavAll).removeClass('scroll__navall');
         }
-    })
+    });
+
+    //add year in copyright
+    const copyYear = document.getElementById('copyYear');
+    const date = new Date();
+    const year = date.getFullYear();
+    copyYear.innerText = year.toString();
 });
